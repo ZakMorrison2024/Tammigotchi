@@ -31,6 +31,12 @@ const uint8_t sprite_1[8] = {
 
 
 // Declarations:
+//Screen
+const int width = 640;
+const int height = 320;
+const int width_mid = 320;
+const int height_mid = 160;
+
 // Input pins
 const int button1Pin = 2;  // Button 1 connected to digital pin 2
 const int button2Pin = 3;  // Button 2 connected to digital pin 3
@@ -59,7 +65,7 @@ void loop() {
   u8g2.clearBuffer();  // Clear the display buffer
   
   // Draw the Squidy sprite in the middle off the screen/ First Frame
-  u8g2.drawBitmap(116, 76, 8, 8, sprite_0);  // x, y, width, height, sprite data
+  u8g2.drawBitmap(width_mid - 4, height_mid - 4, 8, 8, sprite_0);  // x, y, width, height, sprite data
   
   u8g2.sendBuffer();  // Update the display
   
@@ -68,7 +74,7 @@ void loop() {
   u8g2.clearBuffer();  // Clear the display buffer
   
   // Second Frame
-  u8g2.drawBitmap(116, 76, 8, 8, sprite_1);  // x, y, width, height, sprite data
+  u8g2.drawBitmap(width_mid - 4, height_mid - 4, 8, 8, sprite_1);  // x, y, width, height, sprite data
   
   u8g2.sendBuffer();  // Update the display
 
