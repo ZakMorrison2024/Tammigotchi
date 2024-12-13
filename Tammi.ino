@@ -32,18 +32,18 @@ const uint8_t sprite_1[8] = {
 
 // Declarations:
 //Screen
-const int width = 640;
-const int height = 320;
-const int width_mid = 320;
-const int height_mid = 160;
+const int width = 640; // Screen width reference
+const int height = 320; // Screen height reference
+const int width_mid = 320; // Screen width midpoint reference
+const int height_mid = 160; // Screen height midpoint reference
 
 // Input pins
 const int button1Pin = 2;  // Button 1 connected to digital pin 2
 const int button2Pin = 3;  // Button 2 connected to digital pin 3
 
 // Tammi variables:
-int food = 100;
-int happy = 100;
+int food = 100; // Food meter
+int happy = 100; // Happiness meter
 
 
 void setup() {
@@ -104,14 +104,14 @@ void loop() {
     delay(200); // Debounce delay
   }
 
-    food -= 1;
-    delay(5000);
-    Serial.println(food);
+    food -= 1; // Food decrease
+    delay(5000); // 5 sec delay
+    Serial.println(food); // Debug
 
-    if (food < 50) {
-    happy -= 1;
-    delay(5000);
-    Serial.println(happy);
+    if (food < 50) { // If hungry
+    happy -= 1; // Happiness decrease
+    delay(5000); // 5 sec delay
+    Serial.println(happy); // Debug
     }
 
 
