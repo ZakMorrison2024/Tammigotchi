@@ -1,0 +1,2 @@
+# Tammigotchi
+Tamagotchi for Arduino
