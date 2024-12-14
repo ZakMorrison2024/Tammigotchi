@@ -32,10 +32,10 @@ const uint8_t sprite_1[8] = {
 
 // Declarations:
 //Screen
-const int width = 640; // Screen width reference
-const int height = 320; // Screen height reference
-const int width_mid = 320; // Screen width midpoint reference
-const int height_mid = 160; // Screen height midpoint reference
+const int width = 128; // Screen width reference
+const int height = 64; // Screen height reference
+const int width_mid = 64; // Screen width midpoint reference
+const int height_mid = 32; // Screen height midpoint reference
 
 // Input pins
 const int button1Pin = 2;  // Button 1 connected to digital pin 2
